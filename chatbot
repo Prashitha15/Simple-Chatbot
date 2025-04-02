@@ -1,0 +1,14 @@
+# 6. Simple Chatbot
+
+def chatbot():
+    responses = {"hello": "Hi there!", "how are you": "I'm a bot, always fine!", "bye": "Goodbye!"}
+    while True:
+        user_input = input("You: ").lower()
+        if user_input in responses:
+            print("Bot:", responses[user_input])
+        elif user_input == 'exit':
+            break
+        else:
+            print("Bot: I don't understand.")
+
+chatbot()
